@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 function NoteForm({ onSubmit, onChange, title, body, buttonText }) {
   return (
     <form onSubmit={onSubmit}>
-      <input name="title" type="text" value={title} onChange={onChange}/>
-      <input name="body" type="textarea" value={body} onChange={onChange}/>
+      <input name="title" value={title} onChange={onChange}/>
+      <textarea name="body" value={body} onChange={onChange}/>
       <button>{buttonText}</button>
     </form>
   );

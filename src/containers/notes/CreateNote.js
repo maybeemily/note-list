@@ -28,7 +28,7 @@ class CreateNote extends PureComponent {
   render() {
     const { title, body } = this.state;
     return (
-      <NoteForm onSubmit={this.handleSubmit} onChange={this.handleChange} title={title} body={body} submitText="Create Note"/>
+      <NoteForm onSubmit={this.handleSubmit} onChange={this.handleChange} title={title} body={body} buttonText="Create Note"/>
     );
   }
 }
