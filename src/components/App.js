@@ -1,6 +1,10 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <Provider>
+      <App/>
+    </Provider>
+  );
 }
-  
