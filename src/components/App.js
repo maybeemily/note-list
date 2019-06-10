@@ -1,10 +1,8 @@
 import React from 'react';
-import { Provider } from 'react-redux';
+import CreateNote from '../containers/notes/CreateNote';
 
 export default function App() {
   return (
-    <Provider>
-      <App/>
-    </Provider>
+    <CreateNote />
   );
 }
