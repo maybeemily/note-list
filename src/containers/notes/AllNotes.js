@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import Notes from '../../components/notes/Notes';
 import { fetchNotes } from '../../actions/notesActions';
-import { getNotes, getNotesLoading } from '../../services/notesApi';
+import { getNotes, getNotesLoading } from '../../selectors/notesSelectors';
 import { connect } from 'react-redux';
 
 class AllNotes extends PureComponent {
@@ -26,7 +26,7 @@ class AllNotes extends PureComponent {
 
 const mapStateToProps = state => ({
   notes: getNotes(state),
-  loading: getNotesLoading()
+  loading: getNotesLoading(state)
 });
 
 const mapDispatchToProps = dispatch => ({
